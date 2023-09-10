@@ -1,4 +1,4 @@
-import pygame,sys,itertools,glider_gun,time,custom
+import pygame,sys,itertools,time
 
 pygame.init()
 
@@ -9,10 +9,52 @@ screen = pygame.display.set_mode((WIDTH,HEIGHT))
 
 ALIVE_COLOR = (255,255,255)
 DEAD_COLOR = (0,0,0)
-CELL_SIZE = 2
+CELL_SIZE = 5
 
 ALL_COORDINATES = list(itertools.product(list(range(0,WIDTH,CELL_SIZE)),list(range(0,HEIGHT,CELL_SIZE))))
 
+def glider_gun():
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(10*5,30*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(11*5,30*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(10*5,31*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(11*5,31*5, CELL_SIZE, CELL_SIZE))
+
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(23*5,27*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(22*5,27*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(21*5,28*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(20*5,29*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(20*5,30*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(20*5,31*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(21*5,32*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(22*5,33*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(23*5,33*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(24*5,30*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(25*5,28*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(25*5,32*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(26*5,29*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(26*5,30*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(26*5,31*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(27*5,30*5, CELL_SIZE, CELL_SIZE))
+
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(30*5,29*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(30*5,28*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(30*5,27*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(31*5,29*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(31*5,28*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(31*5,27*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(32*5,30*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(32*5,26*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(34*5,26*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(34*5,25*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(34*5,30*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(34*5,31*5, CELL_SIZE, CELL_SIZE))
+
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(44*5,28*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(44*5,27*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(45*5,28*5, CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen,ALIVE_COLOR,pygame.Rect(45*5,27*5, CELL_SIZE, CELL_SIZE))
+
+#glider_gun()
 
 def simulation():
 
